@@ -1,6 +1,6 @@
 # Makefile for AVR projects
 
-TARGET	:= $(shell basename $(PWD))
+TARGET	:= blink
 MCU		:= atmega328p
 FREQ	:= 16000000L
 PGMR	:= arduino
@@ -16,7 +16,7 @@ else
 	ifeq ($(PLATFORM), Linux)
 		PORT := /dev/ttyACM0
 	else
-		PORT := COM6
+		PORT := COM3
 	endif
 endif
 

@@ -33,4 +33,4 @@ all:	$(TARGET).hex $(LST)
 	$(GCC) -c $(CFLAGS) -o $@ $<
 
 %.lst:	%.elf
-	$(OBJDUMP) -C -d $< > $@
+	$(OBJDUMP) -d $< > $@
